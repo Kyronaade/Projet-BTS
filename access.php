@@ -32,13 +32,13 @@ if ($method === 'GET') {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'goatval035@gmail.com';
-            $mail->Password   = 'xqgzfkypxqxbrpzr';
+            $mail->Username   = 'projetval1@gmail.com';
+            $mail->Password   = 'jhrfjgbdsijxvfzg';
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
             $mail->CharSet    = 'UTF-8';
-            $mail->setFrom('goatval035@gmail.com', 'Dashboard RFID');
-            $mail->addAddress('goatval035@gmail.com');
+            $mail->setFrom('projetval1@gmail.com', 'Dashboard RFID');
+            $mail->addAddress('projetval1@gmail.com');
             $mail->Subject = 'Alerte RFID - Accès refusé';
             $mail->Body    = "Un accès refusé a été détecté.\n\nDate : " . date('d/m/Y H:i:s') . "\nUID badge : " . $uid . "\nID accès : " . $id;
             $mail->send();
